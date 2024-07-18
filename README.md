@@ -1,1 +1,5 @@
-# compiler-1402-02
+- All three phases of the project have been implemented.
+- Both bonus tasks have also been implemented.
+- When calling a function, the input type is not checked against the defined input type, but the number of inputs is checked.
+- Re-definition of classes is checked.
+- In assignment statements, it is verified that the variable has been previously defined.
