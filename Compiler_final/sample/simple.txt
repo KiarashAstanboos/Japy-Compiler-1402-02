@@ -1,0 +1,49 @@
+MAIN protected class Sample2 inherits a begin
+    field double d
+    protected field string y, z
+	func main() returns double begin
+		var a = 2
+		var b = 1
+		var c= f()
+		var s1 = new string[2]
+		var s2 = new string[2]
+		var ss = "a"
+		var mamad = true
+		s1[0] = ss
+		s2[0] = bb
+        var i1 = new int[1]
+        var i2 = new int[1]
+
+		if(a == b)
+			sout("True")
+		else
+			sout("False")
+
+		while (a > 0) begin
+		var c="True"
+			if(a == 2)
+				a = b * 10
+			elif(a == 3333333)
+				continue
+				elif(a == 3333333)
+				continue
+			else
+				var a = 1
+				sout(factorial(555555))
+		end
+		return 99999
+	end
+end
+
+class fact begin
+    public field string new_var
+    func factorial(a:int , b:bool [] ) returns String begin
+        var a = new_function (10)
+        b = 10 * c
+        d++
+        if(a == b)
+			sout("TTTTTTTTTTTTTTTT")
+
+        return "factorial(a)"
+    end
+end

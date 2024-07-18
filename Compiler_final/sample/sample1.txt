@@ -1,0 +1,58 @@
+MAIN protected class Sample2 inherits fact begin
+    field bool d,x
+    field double d
+    field bool x
+    protected field string y, z
+    	 private func helperFunc(a: int, b: int) returns int begin
+        return a + b
+    end
+	func main() returns double begin
+		var a = 2
+		var b = 2
+		var s1 = new string[12]
+		var s2 = new string[2]
+		var ss = "a"
+		var mamad = true
+		s1[1.5] = ss
+		s2[0] = bb
+		a="mamad"
+		chel = 40
+        var i1 = new int[1]
+        var i2 = new int[1]
+        this.d = 1.2
+        var asqar = this.helperFunc()
+		if(a == b)
+			sout("True")
+		else
+		var x = this.main()
+			sout("False")
+		while (a > 0) begin
+			if(a == 2) begin
+				a = b * 10
+				continue
+			end
+			elif(a == 3333333)
+				break
+			else
+				a--
+			sout(factorial(555555))
+		end
+		return 99999
+	end
+
+      public func helperFunc(amount: double) returns void begin
+        this.balance = this.balance + amount
+    end
+
+end
+
+class  fact inherits Sample2 begin
+    func factorial(a:int , b:bool [] ) returns string begin
+        b = 10 * c
+        d++
+        if(a == b)
+			sout("TTTTTTTTTTTTTTTT")
+
+        return 2
+    end
+end

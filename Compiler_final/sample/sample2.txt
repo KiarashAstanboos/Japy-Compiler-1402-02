@@ -1,0 +1,142 @@
+MAIN class MainClass inherits BaseClass begin
+    public field int mainField1, mainField2
+    private field bool isRunning
+
+    public func mainFunc() returns void begin
+        var x = 10, y = 20, z = -5, var kkk = 2
+        sout("Starting main function")
+
+        if (x < y)
+            sout("x is less than y")
+        elif (x == y)
+            sout("x is equal to y")
+        else
+            sout("x is not less than y")
+
+        while (x > 0) begin
+            sout("x is: " + x)
+            while (kkk > 0) begin
+            sout("GOGO GAGA")
+            kkk = kkk - 1
+            end
+            x = x - 1
+        end
+
+        var a = 5
+        if (a > 0) begin
+            sout("a is positive")
+        end
+
+        while (a < 10) begin
+            sout("a is: " + a)
+            a = a + 1
+            if (a == 7)
+                break
+            else
+                continue
+        end
+
+        if (!isRunning)
+            sout("The system is not running")
+
+        return x
+    end
+
+    private func helperFunc(a: int, b: int) returns int begin
+        return a + b
+    end
+end
+
+public class AnotherClass begin
+    protected field string name
+    public field double balance
+
+    public func setName(n: string) returns void begin
+        this.name = n
+    end
+
+    public func updateBalance(amount: double) returns void begin
+        this.balance = this.balance + amount
+    end
+
+    public func displayInfo() returns void begin
+        sout("Name: " + this.name)
+        sout("Balance: " + this.balance)
+    end
+
+    public func complexConditionTest(x: int, y: int) returns string begin
+        if (x > y)
+            sout("x is greater than y")
+        elif (x == y)
+            sout("x is equal to y")
+        elif (x < y && y > 0)
+            sout("x is less than y and y is positive")
+        else
+            sout("x is less than y and y is non-positive")
+
+        return "Condition test completed"
+    end
+end
+
+class BaseClass begin
+    protected field int baseField
+
+    protected func baseMethod() returns void begin
+        sout("This is a base method")
+    end
+
+    public func baseMethodWithParams(a: int, b: bool) returns string begin
+        if (b)
+            sout("Boolean is true, value of a: " + a)
+        else
+            sout("Boolean is false")
+
+        return "Method executed"
+    end
+end
+
+public class UtilityClass begin
+    public func computeFactorial(n: int) returns int begin
+        var result = 1
+        while (n > 0) begin
+            result = result * n
+            n = n - 1
+        end
+        return result
+    end
+
+    public func someMethod() returns void begin
+        sout("No parameters method")
+    end
+end
+
+protected class DataContainer begin
+    protected field int[] data
+
+    public func initializeData(size: int) returns void begin
+        var data = new int[10]
+        var i = 0
+        while (i < size) begin
+            data[11] = i * 2
+            i = i + 1
+        end
+    end
+
+    public func getDataAtIndex(index: int) returns int begin
+        return data[index]
+    end
+end
+
+public class MixedFieldClass begin
+    public field bool[] boolArray
+    public field string description
+
+    public func initFields(size: int) returns void begin
+        boolArray = new bool[size]
+        description = "Initialized"
+    end
+
+    public func getFieldInfo() returns void begin
+        sout("Description: " + description)
+    end
+end

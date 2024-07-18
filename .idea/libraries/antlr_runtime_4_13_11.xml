@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="antlr-runtime-4.13.11">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Compiler_final/lib/antlr-runtime-4.13.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
